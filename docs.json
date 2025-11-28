@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "aspen",
   "name": "Linkly AI",
   "description": "Linkly AI - An open-source AI-powered knowledge base for your desktop",
   "colors": {
@@ -22,23 +22,114 @@
     "languages": [
       {
         "language": "en",
-        "pages": ["en/introduction", "en/how-to-use"]
-      },
-      {
-        "language": "fr",
-        "pages": ["fr/introduction", "fr/how-to-use"]
-      },
-      {
-        "language": "es",
-        "pages": ["es/introduction", "es/how-to-use"]
-      },
-      {
-        "language": "ja",
-        "pages": ["ja/introduction", "ja/how-to-use"]
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": ["en/introduction", "en/how-to-use"]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "pages": ["en/changelog"]
+          }
+        ]
       },
       {
         "language": "zh",
-        "pages": ["zh/introduction", "zh/how-to-use"]
+        "global": {
+          "anchors": [
+            {
+              "anchor": "官网",
+              "icon": "globe",
+              "href": "https://linkly.ai"
+            },
+            {
+              "anchor": "社区",
+              "icon": "people",
+              "href": "https://linkly.ai/"
+            },
+            {
+              "anchor": "下载",
+              "icon": "download",
+              "href": "https://linkly.ai/"
+            }
+          ]
+        },
+        "tabs": [
+          {
+            "tab": "指南",
+
+            "pages": [
+              {
+                "group": "快速开始",
+                "icon": "zap",
+                "pages": ["zh/introduction", "zh/how-to-use"]
+              }
+            ]
+          },
+          {
+            "tab": "更新日志",
+            "pages": ["zh/changelog"]
+          }
+        ]
+      },
+      {
+        "language": "ja",
+        "tabs": [
+          {
+            "tab": "ガイド",
+            "groups": [
+              {
+                "group": "はじめに",
+                "pages": ["ja/introduction", "ja/how-to-use"]
+              }
+            ]
+          },
+          {
+            "tab": "更新履歴",
+            "pages": ["ja/changelog"]
+          }
+        ]
+      },
+      {
+        "language": "fr",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Démarrage",
+                "pages": ["fr/introduction", "fr/how-to-use"]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "pages": ["fr/changelog"]
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "tabs": [
+          {
+            "tab": "Guías",
+            "groups": [
+              {
+                "group": "Primeros Pasos",
+                "pages": ["es/introduction", "es/how-to-use"]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "pages": ["es/changelog"]
+          }
+        ]
       }
     ]
   },
@@ -47,17 +138,14 @@
     "dark": "/logo/dark.webp"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "⭐ Star on Github",
-        "href": "https://github.com/LinklyAI/desktop"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Join Waitlist",
-      "href": "https://github.com/LinklyAI/desktop"
+      "href": "https://tally.so/r/b5ZOrE"
     }
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude", "mcp"]
   },
   "footer": {
     "socials": {
