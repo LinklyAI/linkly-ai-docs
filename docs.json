@@ -22,12 +22,32 @@
     "languages": [
       {
         "language": "en",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Website",
+              "icon": "globe",
+              "href": "https://linkly.ai"
+            },
+            {
+              "anchor": "Community",
+              "icon": "people",
+              "href": "https://linkly.ai/"
+            },
+            {
+              "anchor": "Download",
+              "icon": "download",
+              "href": "https://linkly.ai/"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "Guides",
             "groups": [
               {
                 "group": "Getting Started",
+                "icon": "zap",
                 "pages": ["en/introduction", "en/how-to-use"]
               }
             ]
@@ -79,12 +99,32 @@
       },
       {
         "language": "ja",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "公式サイト",
+              "icon": "globe",
+              "href": "https://linkly.ai"
+            },
+            {
+              "anchor": "コミュニティ",
+              "icon": "people",
+              "href": "https://linkly.ai/"
+            },
+            {
+              "anchor": "ダウンロード",
+              "icon": "download",
+              "href": "https://linkly.ai/"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "ガイド",
             "groups": [
               {
                 "group": "はじめに",
+                "icon": "zap",
                 "pages": ["ja/introduction", "ja/how-to-use"]
               }
             ]
@@ -97,12 +137,32 @@
       },
       {
         "language": "fr",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Site Web",
+              "icon": "globe",
+              "href": "https://linkly.ai"
+            },
+            {
+              "anchor": "Communauté",
+              "icon": "people",
+              "href": "https://linkly.ai/"
+            },
+            {
+              "anchor": "Télécharger",
+              "icon": "download",
+              "href": "https://linkly.ai/"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "Guides",
             "groups": [
               {
                 "group": "Démarrage",
+                "icon": "zap",
                 "pages": ["fr/introduction", "fr/how-to-use"]
               }
             ]
@@ -115,12 +175,32 @@
       },
       {
         "language": "es",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Sitio Web",
+              "icon": "globe",
+              "href": "https://linkly.ai"
+            },
+            {
+              "anchor": "Comunidad",
+              "icon": "people",
+              "href": "https://linkly.ai/"
+            },
+            {
+              "anchor": "Descargar",
+              "icon": "download",
+              "href": "https://linkly.ai/"
+            }
+          ]
+        },
         "tabs": [
           {
             "tab": "Guías",
             "groups": [
               {
                 "group": "Primeros Pasos",
+                "icon": "zap",
                 "pages": ["es/introduction", "es/how-to-use"]
               }
             ]
