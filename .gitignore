@@ -1,1 +1,26 @@
+# OS files
 .DS_Store
+Thumbs.db
+
+# Mintlify
+.mintlify/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Backup files
+bak/
+
+# Editor directories
+.idea/
+*.swp
+*.swo
+*~
