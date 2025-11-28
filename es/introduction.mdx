@@ -1,6 +1,6 @@
 ---
 title: Linkly AI
-description: "Un segundo cerebro con IA local, respondiendo instantáneamente desde tus archivos."
+description: "Enlaza tus archivos locales a las apps de IA populares."
 ---
 
 <img
@@ -16,106 +16,170 @@ description: "Un segundo cerebro con IA local, respondiendo instantáneamente de
 
 ## ¿Qué es esto?
 
-Linkly AI es una base de conocimientos con IA de código abierto, un cliente de escritorio que funciona localmente.
+Linkly AI es una base de conocimientos de IA gratuita, una capa de contexto de IA independiente que funciona localmente.
 
 Con Linkly AI, puedes:
 
-- Mantener conversaciones con IA sobre documentos almacenados en tu ordenador personal, sin limitaciones
-- Utilizar servicios LLM de cualquier proveedor, o servicios de modelos desplegados localmente como [Ollama](https://ollama.com/)
-- Encontrar documentos en tu base de conocimientos con una descripción vaga
-- Utilizar la herramienta [DeepResearch](https://openai.com/index/introducing-deep-research/) para investigar un gran número de documentos y redactar informes
-- Simplemente usarlo como otro chatbot de IA fácil de usar
+- Crear bases de conocimiento nativas de IA a partir de cualquier documento y directorio en tu ordenador
+- Recuperar rápidamente contexto preciso para usar con cualquier chatbot de IA
+- Usarlo como una herramienta directamente accesible por chatbots de IA y agentes que soportan protocolos como MCP
+- Rastrear fuentes de conocimiento y encontrar el origen de las referencias
 
-En resumen, es un segundo cerebro de inteligencia artificial completamente tuyo, gratuito, de código abierto, elegante y verdaderamente utilizable.
+No es:
+
+- No es otro chatbot de IA
+- No es otra aplicación de notas, continúas escribiendo en tu software de notas favorito
+- No es una base de conocimientos que requiere importación y cambio frecuentes
+
+En resumen, es una base de conocimientos nativa de IA, completamente gratuita y local. Tu ordenador es tu base de conocimientos de IA.
 
 <Tip>
-  La inspiración para Linkly AI proviene de la excelente aplicación ligera de base de conocimientos en [ChatGPT](https://www.anthropic.com/news/projects)
-  y
-  [Claude](https://support.anthropic.com/zh-CN/articles/9517075-%E4%BB%80%E4%B9%88%E6%98%AF%E9%A1%B9%E7%9B%AE): Project.
-  Si has utilizado este tipo de producto, te sentirás muy cómodo.
+  La inspiración para Linkly AI proviene de la excelente función ligera de base
+  de conocimientos llamada Project en
+  [ChatGPT](https://www.anthropic.com/news/projects) y
+  [Claude](https://support.anthropic.com/zh-CN/articles/9517075-%E4%BB%80%E4%B9%88%E6%98%AF%E9%A1%B9%E7%9B%AE).
+  Si has utilizado estos productos, encontrarás Linkly AI muy familiar.
 </Tip>
 
 ## ¿Para quién está diseñado?
 
-Linkly AI está diseñado para todos los **trabajadores del conocimiento**, **estudiantes**, **investigadores**, **técnicos** y **pequeños equipos** que luchan con la gestión del conocimiento.
+Linkly AI está diseñado para todos los **trabajadores del conocimiento**, **creadores**, **estudiantes**, **investigadores** y **pequeños equipos** que luchan con la gestión de grandes cantidades de fragmentos de conocimiento.
 
 ¿Has experimentado alguno de estos problemas?
 
 <CardGroup cols={2}>
-  <Card title="Proliferación de fragmentos de información" icon="file-lines" iconType="duotone">
-    PDF, DOCX, páginas web, notas y otros documentos dispersos, difíciles de encontrar, con una carga de lectura cada vez mayor
+  <Card
+    title="Proliferación de fragmentos de información"
+    icon="file-lines"
+    iconType="duotone"
+  >
+    PDF, DOCX, páginas web, notas y otros documentos dispersos, difíciles de
+    encontrar, con una carga de lectura cada vez mayor
   </Card>
-  <Card title="Organización del conocimiento consume mucho tiempo" icon="folder-tree" iconType="duotone">
-    Clasificación manual, etiquetado, creación de carpetas - la inversión de tiempo supera ampliamente los resultados
+  <Card
+    title="Organización del conocimiento consume mucho tiempo"
+    icon="folder-tree"
+    iconType="duotone"
+  >
+    Clasificación manual, etiquetado, creación de carpetas - la inversión de
+    tiempo supera ampliamente los resultados
   </Card>
   <Card title="Búsqueda ineficiente" icon="magnifying-glass" iconType="duotone">
-    Búsqueda de documentos basada únicamente en la memoria de nombres de archivos, mientras que el contenido deseado está oculto en algún archivo del que solo recuerdas vagamente
+    Búsqueda de documentos basada únicamente en la memoria de nombres de
+    archivos, mientras que el contenido deseado está oculto en algún archivo del
+    que solo recuerdas vagamente
   </Card>
-  <Card title="Dificultad para utilizar el conocimiento, convirtiéndote en un 'hámster de conocimiento'" icon="box-archive" iconType="duotone">
-    El contenido recopilado y organizado con dificultad no puede ser integrado y aplicado, formando extensas "reservas de conocimiento"
+  <Card
+    title="Dificultad para utilizar el conocimiento"
+    icon="box-archive"
+    iconType="duotone"
+  >
+    El contenido recopilado y organizado con dificultad no puede ser integrado y
+    aplicado, formando extensas « reservas de conocimiento »
   </Card>
 </CardGroup>
 
-Estos problemas nunca se han resuelto eficazmente hasta la llegada de la IA.
+Estos problemas nunca se han resuelto eficazmente hasta la llegada de los LLM.
 
-La **búsqueda con IA** ha resuelto bien los problemas de recopilación y navegación rápida del conocimiento. Se esperaba que las **bases de conocimiento con IA** resolverían los problemas de organización y uso del conocimiento, pero si utilizas la mayoría de los productos de bases de conocimiento con IA del mercado, encontrarás los siguientes problemas:
+Las tecnologías **LLM**, **RAG**, **Agent** y otras han resuelto eficazmente los desafíos de la recopilación y utilización del conocimiento. Sin embargo, cuando utilizas la mayoría de los productos de **bases de conocimiento con IA** desarrollados con estas tecnologías en el mercado, encontrarás los siguientes problemas:
 
 <AccordionGroup>
-  <Accordion title="Respuestas inexactas, alucinaciones significativas">
-    La mayoría de las bases de conocimiento con IA utilizan simplemente RAG para buscar fragmentos de documentos, con resultados mediocres debido a limitaciones técnicas, costes, rendimiento y elección de modelos.
-  </Accordion>
-  <Accordion title="Elección de modelos limitada">
-    Debido a los costes y la competencia entre grandes empresas, a menudo no podemos utilizar los mejores modelos para preguntas y respuestas, lo que reduce considerablemente la eficacia.
+  <Accordion title="Respuestas inexactas y alucinaciones">
+    La mayoría de las bases de conocimiento con IA utilizan simplemente RAG para
+    buscar fragmentos de documentos, con resultados mediocres.
   </Accordion>
   <Accordion title="Preocupante privacidad de datos">
-    La mayoría de las bases de conocimiento con IA funcionan en la nube, nuestros datos deben cargarse en sus servidores. En caso de problemas de seguridad o si el proveedor de la aplicación traiciona nuestra confianza, nuestros datos privados se verán comprometidos.
+    La mayoría de las bases de conocimiento con IA funcionan en la nube,
+    nuestros datos deben cargarse en sus servidores. En caso de problemas de
+    seguridad o si el proveedor abusa de nuestros datos, nuestra información
+    privada se verá comprometida.
 
-    Algunas grandes empresas incluso utilizan abiertamente los datos de los usuarios para entrenar sus modelos.
+    Algunos proveedores incluso utilizan los datos de los usuarios para entrenar
+    sus modelos.
 
   </Accordion>
-  <Accordion title="Capacidad limitada, costes elevados">
-    Los costes de funcionamiento de las aplicaciones de IA son muy elevados y deben repercutirse en los usuarios o reducirse la calidad. La mayoría de las bases de conocimiento con IA solo ofrecen unos pocos GB de capacidad gratuita.
-    
-    Muchos usuarios tienen su propia potencia de cálculo (como sus propias tarjetas gráficas) pero no pueden utilizarla, y es difícil elegir libremente los proveedores de modelos.
+  <Accordion title="Capacidad limitada y costes elevados">
+    La mayoría de las bases de conocimiento con IA solo ofrecen unos pocos GB de
+    capacidad gratuita, y requieren suscripciones de pago para más
+    funcionalidades y los mejores modelos.
+  </Accordion>
+  <Accordion title="Creación de nuevos problemas">
+    Las bases de conocimiento con IA estaban destinadas a resolver el problema
+    de la gestión dispersa del conocimiento, pero los usuarios terminan teniendo
+    que mover conocimientos entre múltiples aplicaciones de IA, lo que va en
+    contra del propósito.
+
+    Imposible gestionar cómodamente en un solo lugar, imposible usar en tus
+    aplicaciones de IA más utilizadas, siempre requiriendo esfuerzo extra para
+    la migración.
+
   </Accordion>
 </AccordionGroup>
 
 ## Ventajas clave
 
-El equipo de desarrollo de Linkly AI, utilizando conceptos y arquitectura técnica de vanguardia, se compromete a crear la mejor aplicación de base de conocimientos con IA, orientada al futuro.
+Nos comprometemos a crear la mejor aplicación de base de conocimientos con IA, accesible para todos.
 
 <CardGroup cols={1}>
-  <Card title="Prioridad local" icon="laptop" horizontal="horizontal" iconType="duotone">
-    Linkly AI es un cliente que funciona completamente en el ordenador personal del usuario, todos los datos se almacenan localmente. Si el usuario es capaz de desplegar su propio modelo, incluso puede funcionar completamente sin conexión.
+  <Card
+    title="Prioridad local"
+    icon="laptop"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI es un cliente que funciona completamente en el ordenador personal
+    del usuario, todos los datos se almacenan localmente. Si el usuario es capaz
+    de desplegar su propio modelo, incluso puede funcionar completamente sin
+    conexión.
   </Card>
-  <Card title="Código abierto" icon="github" horizontal="horizontal" iconType="duotone">
-    Linkly AI ha abrazado el código abierto desde el primer día, por una firme convicción en la futura libertad del conocimiento y la soberanía del usuario. Hacer público el código central significa que puedes examinar cada línea de lógica para asegurarte de que los datos solo circulan en tu propia máquina; los desarrolladores de todo el mundo también pueden mejorar conjuntamente el rendimiento y la seguridad, haciendo que la tecnología sea transparente y verificable.
+  <Card
+    title="Gratuito"
+    icon="github"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    El cliente Linkly AI es gratuito, los usuarios no necesitan pagar nada. Los
+    servicios de valor añadido solo se proporcionan para sincronización en la
+    nube, potencia de cálculo en la nube y funcionalidades similares.
+  </Card>
+  <Card
+    title="Seguridad de datos"
+    icon="shield-check"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Gracias al enfoque local primero, Linkly AI dispone de una seguridad de
+    datos absoluta. Sin inicio de sesión requerido, sin anuncios, sin
+    seguimiento, sin restricciones de pago.
 
-    Solo así la IA puede mejorar a cada persona de manera más segura y controlable.
+    Solo así la IA puede crear valor para todos de manera más segura y
+    controlable.
 
   </Card>
-  <Card title="Seguridad de datos" icon="shield-check" horizontal="horizontal" iconType="duotone">
-    Gracias a la ejecución local y a la estrategia de código abierto, Linkly AI dispone de una seguridad de datos absoluta.
+  <Card
+    title="Preciso"
+    icon="bullseye"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI se centrará a largo plazo en la búsqueda de conocimientos y la
+    construcción de contexto. Todo el contexto puede rastrearse con precisión
+    para garantizar preguntas y respuestas de IA fiables.
   </Card>
-  <Card title="Más preciso" icon="bullseye" horizontal="horizontal" iconType="duotone">
-    Linkly AI se centra en el ámbito de las bases de conocimiento, utilizando las tecnologías más avanzadas de RAG, Agentic, GraphRAG y Memory. Como no es necesario tener en cuenta el coste de inferencia del modelo, se puede utilizar la mejor combinación de tecnologías para garantizar los mejores efectos de preguntas y respuestas.
-  </Card>
-  <Card title="Ricas aplicaciones de conocimiento" icon="brain" horizontal="horizontal" iconType="duotone">
-    Según la teoría de la pirámide de conocimiento DIKW, las personas crean bases de conocimiento para utilizarlas. Linkly AI incluirá diversas aplicaciones de conocimiento para ayudarte a recopilar, organizar y utilizar mejor el conocimiento.
-
-    Por ejemplo, hemos integrado orgánicamente lectores tradicionales, funciones de recorte y capacidades de conexión en red para ayudar a los usuarios a completar la recopilación de datos de forma más conveniente y automatizada.
-
-  </Card>
-  <Card title="Experiencia de usuario de primera clase" icon="star" horizontal="horizontal" iconType="duotone">
-    Una buena experiencia de producto puede proporcionar placer a los usuarios. Nos comprometemos a proporcionar una potente base de conocimientos con IA manteniendo la simplicidad y la concisión, sin hacer que los usuarios aprendan demasiadas tecnologías oscuras, permitiendo que todos puedan empezar a utilizarla.
+  <Card
+    title="Abierto"
+    icon="star"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI adopta una estrategia de no bloqueo, proporcionando por defecto
+    protocolos como MCP para un acceso conveniente por otras aplicaciones de IA.
+    Todos los datos utilizan formato de texto para una fácil importación a otras
+    aplicaciones.
   </Card>
 </CardGroup>
 <Frame>
-<img
-  className=""
-  src="/images/gallery01.webp"
-  alt="Tema oscuro"
-/>
+  <img className="" src="/images/gallery01.webp" alt="Tema oscuro" />
 </Frame>
 
 ---
@@ -135,4 +199,4 @@ A continuación, puedes:
     iconType="duotone"
     horizontal="horizontal"
   ></Card>
-</CardGroup> 
+</CardGroup>

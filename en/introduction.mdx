@@ -1,6 +1,6 @@
 ---
 title: Linkly AI
-description: "Local-First AI second brain -- answers from your files."
+description: "Link your local files to popular AI apps."
 ---
 
 <img
@@ -14,31 +14,36 @@ description: "Local-First AI second brain -- answers from your files."
   alt="Dark theme"
 />
 
-## What is Linkly AI?
+## What is this?
 
-Linkly AI is an open-source AI knowledge base that runs locally as a desktop application.
+Linkly AI is a free AI knowledge base, a standalone AI context layer running locally.
 
 With Linkly AI, you can:
 
-- Have AI conversations with documents stored on your personal computer, without any limitations
-- Use LLM services from any provider, or local model deployments like [Ollama](https://ollama.com/)
-- Find documents in your knowledge base using vague descriptions
-- Use [DeepResearch](https://openai.com/index/introducing-deep-research/) tools to research large volumes of documents and generate reports
-- Simply use it as another AI chatbot, but with a more elegant interface
+- Build AI-native knowledge bases from any documents and directories on your computer
+- Quickly retrieve accurate context to use with any AI chatbot
+- Use it as a tool that can be directly accessed by AI chatbots and agents supporting protocols like MCP
+- Trace knowledge sources and find the origin of references
 
-In essence, this is a completely free, open-source, elegant, and truly functional artificial intelligence second brain that belongs entirely to you.
+It is not:
+
+- Not another AI chatbot
+- Not another note-taking app, you continue writing notes in your favorite note-taking software
+- Not a knowledge base that requires frequent importing and switching
+
+In short, this is a completely free, local, AI-native knowledge base. Your computer is your AI knowledge base.
 
 <Tip>
   Linkly AI draws inspiration from the excellent lightweight knowledge base
-  application called Project in
-  [ChatGPT](https://www.anthropic.com/news/projects) and
+  feature called Project in [ChatGPT](https://www.anthropic.com/news/projects)
+  and
   [Claude](https://support.anthropic.com/zh-CN/articles/9517075-%E4%BB%80%E4%B9%88%E6%98%AF%E9%A1%B9%E7%9B%AE).
   If you've used these products, you'll find Linkly AI very familiar.
 </Tip>
 
 ## Who is it for?
 
-Linkly AI is built for all **knowledge workers**, **students**, **researchers**, **technical professionals**, and **small teams** who struggle with knowledge management.
+Linkly AI is built for all **knowledge workers**, **creators**, **students**, **researchers**, and **small teams** who struggle with managing large amounts of knowledge fragments.
 
 Have you ever faced these challenges?
 
@@ -69,66 +74,99 @@ Have you ever faced these challenges?
   </Card>
 </CardGroup>
 
-These problems have never been efficiently solved until the emergence of AI.
+These problems have never been efficiently solved until the emergence of LLMs.
 
-**AI search** has effectively addressed the challenges of knowledge collection and quick browsing. People hoped that **AI knowledge bases** would solve the difficulties of organizing and using knowledge. However, when you use most AI knowledge base products on the market, you'll find the following issues:
+**LLM**, **RAG**, **Agent** and other technologies have effectively addressed the challenges of knowledge collection and utilization. However, when you use most **AI knowledge base** products on the market developed with these technologies, you'll find the following issues:
 
 <AccordionGroup>
   <Accordion title="Inaccurate Answers and Hallucinations">
-    Most AI knowledge bases use only simple RAG to search document fragments, with results compromised by technical limitations, costs, performance constraints, and model selection.
-  </Accordion>
-  <Accordion title="Limited Model Selection">
-    Due to cost constraints and competition among major companies, we often can't use the best models for Q&A, significantly reducing effectiveness.
+    Most AI knowledge bases use only simple RAG to search document fragments,
+    with poor results.
   </Accordion>
   <Accordion title="Concerning Data Privacy">
-    Most AI knowledge bases run in the cloud, forcing us to upload our data to their servers. If security issues arise or service providers misuse data, our private information could be compromised.
+    Most AI knowledge bases run in the cloud, forcing us to upload our data to
+    their servers. If security issues arise or service providers misuse data,
+    our private information could be compromised.
 
-    Some major companies have even blatantly used user data to train their models.
+    Some providers have even used user data to train their models.
 
   </Accordion>
   <Accordion title="Limited Capacity and High Costs">
-    The high operational costs of AI applications are either passed on to users or result in reduced quality. Most AI knowledge bases offer only a few GB of free capacity.
-    
-    Many users have their own computing power (like their own GPUs) but can't use it, and struggle to freely choose model providers.
+    Most AI knowledge bases offer only a few GB of free capacity, and require
+    paid subscriptions for more features and the best models.
+  </Accordion>
+  <Accordion title="Creating New Problems">
+    AI knowledge bases were meant to solve the problem of scattered knowledge
+    management, but users end up having to move knowledge between multiple AI
+    applications, defeating the purpose.
+
+    Unable to manage conveniently in one place, unable to use in your most
+    frequently used AI applications, always requiring extra effort for
+    migration.
+
   </Accordion>
 </AccordionGroup>
 
 ## Core Advantages
 
-The Linkly AI development team employs leading concepts and technical architecture, committed to creating the best, future-oriented AI knowledge base application.
+We are committed to building the best, most accessible AI knowledge base application.
 
 <CardGroup cols={1}>
-  <Card title="Local-First Approach" icon="laptop" horizontal="horizontal" iconType="duotone">
-    Linkly AI is a client that runs entirely on your personal computer, with all data stored locally. If you can deploy models yourself, you can even run it completely offline.
+  <Card
+    title="Local-First"
+    icon="laptop"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI is a client that runs entirely on your personal computer, with
+    all data stored locally. If you can deploy models yourself, you can even
+    run it completely offline.
   </Card>
-  <Card title="Open Source" icon="github" horizontal="horizontal" iconType="duotone">
-    Linkly AI embraces open source from Day One, based on a firm belief in the future of knowledge freedom and user sovereignty. Making the core code public means—you can personally review every line of logic to confirm that data only flows on your local machine; developers worldwide can also jointly improve performance and security, making the technology transparent and verifiable.
+  <Card
+    title="Free"
+    icon="github"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI client is free, users don't need to pay anything. Value-added
+    services are only provided for cloud sync, cloud computing power, and
+    similar features.
+  </Card>
+  <Card
+    title="Data Security"
+    icon="shield-check"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Thanks to local-first approach, Linkly AI offers absolute data security.
+    No login required, no ads, no tracking, no paywall restrictions.
 
-    Only in this way can AI enhance everyone in a safer and more controllable manner.
+    Only in this way can AI create value for everyone in a safer and more
+    controllable manner.
 
   </Card>
-  <Card title="Data Security" icon="shield-check" horizontal="horizontal" iconType="duotone">
-    Thanks to local operation and open-source strategy, Linkly AI offers absolute data security.
+  <Card
+    title="Accurate"
+    icon="bullseye"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI will focus long-term on knowledge retrieval and context building.
+    All context can be accurately traced to ensure reliable AI Q&A.
   </Card>
-  <Card title="Superior Accuracy" icon="bullseye" horizontal="horizontal" iconType="duotone">
-    Linkly AI focuses on the knowledge base domain, implementing cutting-edge RAG, Agentic, GraphRAG, and memory technologies. Without model inference cost constraints, we can use the best technical combinations to ensure optimal Q&A results.
-  </Card>
-  <Card title="Rich Knowledge Applications" icon="brain" horizontal="horizontal" iconType="duotone">
-    According to DIKW knowledge pyramid theory, people create knowledge bases to use them. Linkly AI includes multiple knowledge applications to help you better collect, organize, and use knowledge.
-
-    We've organically integrated traditional readers, web clipping, and internet connectivity to help users complete data collection more conveniently and automatically.
-
-  </Card>
-  <Card title="First-Class User Experience" icon="star" horizontal="horizontal" iconType="duotone">
-    A good product experience brings joy to users. We're committed to providing a powerful AI knowledge base while maintaining simplicity and elegance, without requiring users to learn excessive technical jargon, making it accessible to everyone.
+  <Card
+    title="Open"
+    icon="star"
+    horizontal="horizontal"
+    iconType="duotone"
+  >
+    Linkly AI adopts a non-locking strategy, providing protocols like MCP by
+    default for convenient access by other AI applications. All data uses text
+    format for easy import into other applications.
   </Card>
 </CardGroup>
 <Frame>
-<img
-  className=""
-  src="/images/gallery01.webp"
-  alt="Dark theme"
-/>
+  <img className="" src="/images/gallery01.webp" alt="Dark theme" />
 </Frame>
 
 ---
